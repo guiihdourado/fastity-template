@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "tsx watch src/shared/infra/http/server.ts",
-    "build": "tsup src --out-dir build",
+    "start": "node build/shared/infra/http/server.js",
+    "build": "tsup",
     "test:create-prisma-environment": "npm link ./src/shared/tests/vitest-environment-prisma",
     "test:install-prisma-environment": "npm link vitest-environment-prisma",
     "test": "vitest run --dir src/modules/**/application/use-cases",
